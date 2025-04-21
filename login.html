@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Registration</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Login Form -->
+      <div id="loginForm">
+        <h2>Login</h2>
+        <label for="loginUserId">User ID:</label>
+        <input type="text" id="loginUserId" required />
+
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" required />
+
+        <button onclick="login()">Login</button>
+        <button onclick="showRegistration()">Customer Register</button>
+      </div>
+
+      <!-- Registration Form -->
+      <form id="registerForm" style="display: none" onsubmit="registerCustomer(event)">
+        <h2>Customer Registration</h2>
+
+        <label for="billNumber">Bill Number (last 5 digits):</label>
+        <input type="text" id="billNumber" maxlength="5" required />
+
+        <label for="title">Title:</label>
+        <select id="title">
+          <option>Mr</option>
+          <option>Mrs</option>
+          <option>Ms</option>
+        </select>
+
+        <label for="name">Customer Name:</label>
+        <input type="text" id="name" maxlength="50" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="countryCode">Country Code:</label>
+        <select id="countryCode">
+          <option value="91">+91</option>
+          <option value="1">+1</option>
+        </select>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" maxlength="10" required />
+
+        <label for="userId">User ID (5-20 chars):</label>
+        <input type="text" id="userId" minlength="5" maxlength="20" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" maxlength="30" required />
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" maxlength="30" required />
+
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+        <button type="button" onclick="goBackToLogin()">Back</button>
+      </form>
+
+      <!-- Acknowledgment Section -->
+      <div id="regSuccess" style="display: none">
+        <h2>Registration Acknowledgment</h2>
+        <p class="success">Consumer Registration successful.</p>
+        <p><strong>Customer ID:</strong> <span id="ackConsumerId"></span></p>
+        <p><strong>Customer Name:</strong> <span id="ackName"></span></p>
+        <p><strong>Email:</strong> <span id="ackEmail"></span></p>
+        <button onclick="goBackToLogin()">Back to Login</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
