@@ -1,0 +1,7 @@
+1001|John Doe|Internet|Connection Issue|123 Maple St|9876543210|Active
+1002|Jane Smith|Billing|Overcharged|456 Oak Ave|9123456780|Resolved
+1003|Alice Johnson|Internet|Slow Speed|789 Pine Rd|9988776655|Active
+1004|Bob Lee|TV|No Signal|321 Birch Blvd|9871234560|Active
+1005|Emily Davis|Billing|Wrong Plan|654 Elm St|9765432109|Pending
+1006|Tom Wilson|Internet|Connection Issue|852 Cedar Ln|9345678912|Resolved
+1007|Sarah Brown|TV|Distorted Picture|963 Spruce Dr|9456123789|Active

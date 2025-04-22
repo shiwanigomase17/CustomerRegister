@@ -1,0 +1,5 @@
+ConsumerID | Customer Name | Month1 | Month2 | Month3 | Month4 | Month5
+101        | Alice Brown   | 320    | 450    | 410    | 360    | 390
+102        | John Doe      | 500    | 520    | 530    | 510    | 540
+103        | Jane Smith    | 230    | 250    | 240    | 220    | 260
+104        | Mike Johnson  | 700    | 750    | 710    | 720    | 730
