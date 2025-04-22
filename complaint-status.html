@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Complaint Status</title>
+  <link rel="stylesheet" href="complaint-status.css"/>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="menu">
+      <a href="home.html">Home</a>
+      <a href="payment.html">Pay Bill</a>
+      <a href="register-complaint.html">Register Complaint</a>
+      <a href="complaint-status.html">Complaint Status</a>
+    </div>
+    <div class="user-info">
+      Welcome <span id="username"></span>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Check Complaint Status</h2>
+    <form id="statusForm">
+      <label for="complaintId">Enter Complaint ID:</label>
+      <input type="text" id="complaintId" placeholder="e.g., CMP123456" required>
+      <button type="submit">Check Status</button>
+    </form>
+
+    <div id="statusResult" style="display: none;">
+      <h3>Complaint Status Details</h3>
+      <p><strong>Complaint ID:</strong> <span id="resultId"></span></p>
+      <p><strong>Status:</strong> <span id="resultStatus"></span></p>
+      <p><strong>Description:</strong> <span id="resultDescription"></span></p>
+    </div>
+  </div>
+
+  <script src="complaint-status.js"></script>
+</body>
+</html>

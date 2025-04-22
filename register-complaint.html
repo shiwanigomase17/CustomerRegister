@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register Complaint</title>
+  <link rel="stylesheet" href="complaint.css"/>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="menu">
+      <a href="home.html">Home</a>
+      <a href="payment.html">Pay Bill</a>
+      <a href="register-complaint.html">Register Complaint</a>
+      <a href="complaint-status.html">Complaint Status</a>
+    </div>
+    <div class="user-info">
+      Welcome <span id="username"></span>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Register Complaint / Service Request</h2>
+    <form id="complaintForm">
+      <label for="complaintType">Complaint/Service Type:</label>
+      <select id="complaintType" required onchange="populateCategory()">
+        <option value="">--Select Type--</option>
+        <option value="Billing">Billing related</option>
+        <option value="Voltage">Voltage related</option>
+        <option value="Disruption">Frequent disruption</option>
+        <option value="Street Light">Street light related</option>
+        <option value="Pole">Pole related</option>
+      </select>
+
+      <label for="category">Category:</label>
+      <select id="category" required></select>
+
+      <label for="contactPerson">Contact Person:</label>
+      <input type="text" id="contactPerson" required />
+
+      <label for="landmark">Landmark:</label>
+      <input type="text" id="landmark" required />
+
+      <label for="consumerNo">Consumer No:</label>
+      <input type="text" id="consumerNo" maxlength="13" required />
+
+      <label for="problem">Problem Description:</label>
+      <textarea id="problem" rows="3" required></textarea>
+
+      <label for="mobile">Mobile Number:</label>
+      <input type="text" id="mobile" maxlength="10" required />
+
+      <label for="address">Address:</label>
+      <textarea id="address" rows="3" required></textarea>
+
+      <div class="buttons">
+        <button type="submit">Submit Complaint</button>
+        <button type="button" onclick="resetForm()">Cancel</button>
+      </div>
+    </form>
+
+    <div id="complaintSuccess" style="display:none;">
+      <h3>Complaint Registered Successfully!</h3>
+      <p>Your Complaint ID is: <strong id="complaintId"></strong></p>
+    </div>
+  </div>
+
+  <script src="complaint.js"></script>
+</body>
+</html>

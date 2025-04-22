@@ -13,7 +13,7 @@ function logout() {
         document.getElementById("pay-bill-section").scrollIntoView({ behavior: "smooth" });
         break;
       case "complaint":
-        window.location.href = "complaint.html";
+        window.location.href = "register-complaint.html";
         break;
       case "status":
         window.location.href = "complaint-status.html";
