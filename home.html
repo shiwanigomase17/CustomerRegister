@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css" />
+    <script defer src="home.js"></script>
+  </head>
+  <body id="home-body">
+    <div id="home-navbar" class="navbar">
+      <div class="nav-left">
+        <span class="menu-item" onclick="navigateTo('home')">Home</span>
+        <span class="menu-item" onclick="navigateTo('pay')">Pay Bill</span>
+        <span class="menu-item" onclick="navigateTo('complaint')">Register Complaint</span>
+        <span class="menu-item" onclick="navigateTo('status')">Complaint Status</span>
+      </div>
+      <div class="nav-right">
+        <span id="welcomeUser">Welcome, <span id="username">User</span></span>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </div>
+
+    <div id="pay-bill-section" class="home-container">
+      <h2>Pay Your Bills</h2>
+      <form id="billForm">
+        <label><input type="checkbox" class="bill-checkbox" value="500" /> Electricity - ₹500</label>
+        <label><input type="checkbox" class="bill-checkbox" value="300" /> Water - ₹300</label>
+        <label><input type="checkbox" class="bill-checkbox" value="200" /> Gas - ₹200</label>
+
+        <div class="total-display">
+          <strong>Total Amount:</strong> ₹<span id="totalAmount">0</span>
+        </div>
+
+        <button type="button" onclick="proceedToPayment()">Proceed to Pay</button>
+      </form>
+    </div>
+  </body>
+</html>

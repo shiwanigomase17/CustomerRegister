@@ -10,16 +10,19 @@ function showRegistration() {
     document.getElementById("loginForm").style.display = "block";
   }
   
-  function login() {
+  function login(event) {
+    event.preventDefault(); // Prevent the form from submitting the traditional way
     const userId = document.getElementById("loginUserId").value;
     const password = document.getElementById("loginPassword").value;
   
     if (userId && password) {
-      alert("Login successful (Static check)");
+      localStorage.setItem("username", userId); // ✅ Save username
+      window.location.href = "home.html";       // ✅ Redirect to home
     } else {
       alert("Please enter User ID and Password");
     }
   }
+  
   
   function registerCustomer(event) {
     event.preventDefault();

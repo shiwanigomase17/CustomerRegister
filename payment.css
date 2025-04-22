@@ -1,0 +1,163 @@
+/* General styling for body and container */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Top Menu Styling */
+.top-menu {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: right;
+    border-radius: 8px;
+}
+
+.top-menu button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.top-menu button:hover {
+    background-color: #e60000;
+}
+
+/* Navigation Menu */
+.nav-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.nav-menu ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-menu ul li a:hover {
+    color: #ff4d4d;
+}
+
+/* Payment Details Section */
+.payment-details, .card-details, .transaction-details {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.payment-details h2, .card-details h2, .transaction-details h2 {
+    color: #333;
+}
+
+.payment-details p, .transaction-details p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Inputs */
+input, select {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input:focus, select:focus {
+    border-color: #4CAF50;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Card Details Section Styling */
+.card-details input {
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.card-details button {
+    background-color: #007bff;
+    width: 100%;
+}
+
+.card-details button:hover {
+    background-color: #0056b3;
+}
+
+/* Transaction Details Section */
+.transaction-details button {
+    background-color: #28a745;
+    width: 100%;
+}
+
+.transaction-details button:hover {
+    background-color: #218838;
+}
+
+/* Miscellaneous Styling */
+h2 {
+    margin-bottom: 20px;
+}
+
+.payment-details, .card-details, .transaction-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payment-details button,
+.card-details button,
+.transaction-details button {
+    width: 100%;
+    max-width: 200px;
+}

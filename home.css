@@ -1,0 +1,76 @@
+#home-body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #eef2f7;
+  }
+  
+  #home-navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0056b3;
+    padding: 15px 30px;
+    color: white;
+    align-items: center;
+  }
+  
+  #home-navbar .menu-item {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  #home-navbar .nav-left .menu-item:last-child {
+    margin-right: 0;
+  }
+  
+  #home-navbar .nav-right button {
+    background-color: #fff;
+    color: #0056b3;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .home-container {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home-container h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .home-container form label {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .total-display {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  button[type="button"] {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #218838;
+  }
+  
